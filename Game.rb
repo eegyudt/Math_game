@@ -42,6 +42,7 @@ class Game
       @current_player.score = @current_player.score + 1
       puts "P1: #{@player1.lives}/3 vs P2: #{@player2.lives}/3"
       switch_player
+      puts "----- NEW TURN -----"
       return false
     else
       puts "incorrect"
@@ -54,6 +55,7 @@ class Game
         return true
       else
         switch_player
+        puts "----- NEW TURN -----"
         return false
       end
     end
